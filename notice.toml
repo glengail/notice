@@ -1,0 +1,7 @@
+logFile    = "os.path.join('/app','logs','common.log')"        # notice 服务日志文件名称
+backCount  = 7                                                                           # 日志文件备份个数
+when       = "midnight"                                                                  # 备份发生事件
+fmt        = "%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s"  # 日志格式
+dbFile     = "os.path.join('/app','notice.db')"                # notice 服务 db 文件
+expireDays = 365                                                                         # db 中每条记录最长存在天数
+port       = 5000                                                                        # notice 服务监听端口
